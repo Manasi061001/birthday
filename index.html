@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <br><br><p class="examp">HAPPY BIRTHDAY TO YOU</p>
+    <p class="examp1">I hope you have the best birthday ever....</p><br>
+    <div id="face"></div>
+    <p>Well Well, Here are a bunch of surprise messages for you hehe...</p>
+    <p>You can go ahead and open the gifts yayy !!!</p>
+    <p style="color: brown;">(Click on the gifts to see your secret messages)</p><br>
+    <div class="gift">
+        <br><br><br><div id="gift1"></div>
+        <div id="gift2"></div>
+        <div id="gift3"></div><br><br><br>
+    </div><br><br>
+    </body>
+<script>
+    let Gift1 = document.getElementById("gift1");
+    Gift1.addEventListener('click', function(first) {
+        Gift1.style.backgroundImage = "url('msg1.jpg')"
+        Gift1.style.backgroundSize = "cover"; 
+    })
+    let Gift2 = document.getElementById("gift2");
+    Gift2.addEventListener('click', function(second) {
+        Gift2.style.backgroundImage = "url('msg2.jpg')"
+        Gift2.style.backgroundSize = "cover"
+    })
+    let Gift3 = document.getElementById("gift3");
+    Gift3.addEventListener('click', function(third) {
+        Gift3.style.backgroundImage = "url('msg3.jpg')"
+        Gift3.style.backgroundSize = "cover"; 
+    })
+</script>
+</html>
